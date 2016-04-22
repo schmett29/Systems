@@ -1,0 +1,5 @@
+Author: David Schmetterling
+files to run:
+stocketest.c, doubly_linked_list.c, stock.c
+
+For the generic doubly linked list, I created functions that insert the a node into the front, insert a node in the rear, traverse the list forward (and return the tail), traverse the list backward (and return the head), and display a specified item. The stock structure has a toString method and other methods to get the price, total dollar amount, and percent change. My strategy was to read in line by line from the text file, creating new stocks, and then creating new nodes by passing in the stocks. This would create the doubly linked list and I could imlement functions on the stocks, or the nodes containing the stocks. Unfortunately it is unfinished and I will have to hand it in tomorrow late.

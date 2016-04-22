@@ -1,0 +1,15 @@
+David Schmetterling
+Section 02
+
+To run:
+gcc -o assignment5.exe assignment5.c definitions.c -lpthread
+
+Explination/Problems:
+My plan was to use controller to initialize the linked list and other variables to be manipulated in the critical section. Then I would create the sensor threads with sensor structs passsed into them containing a random number integer seed and an ID number. Each thread would do 10 cycles of:
+	1) aquire the temperature from the sensor node
+	2) place in the linked list
+	3) wait on the conditional variable until the size of the linked list was 10
+	4) Calculate the average temperature
+	5) Set the linked list to null and Linked List size to 0
+
+The program successfully printed out the first cycle of temperatures and the average, but on the 2nd cycle the program would get stuck after adding the first sensor to the linked list.
